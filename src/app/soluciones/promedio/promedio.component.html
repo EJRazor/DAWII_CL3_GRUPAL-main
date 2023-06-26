@@ -1,0 +1,29 @@
+<div class="card">
+ 
+    <H1>PROMEDIO DE NOTAS</H1>  
+   
+    <div class="card-body">
+       <mat-form-field>
+        <mat-label for="txtnumero1" >NOTA01</mat-label>
+        <input type="text" [(ngModel)]="frmProm.nota01"  id="txtnumero1" matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label for="txtnumero2" >NOTA02</mat-label>
+        <input input type="text" [(ngModel)]="frmProm.nota02"  id="txtnumero2" matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label for="txtnumero3" >NOTA03</mat-label>
+        <input input type="text" [(ngModel)]="frmProm.nota03"  id="txtnumero2" matInput>
+      </mat-form-field>
+
+          <button type="button" (click)="calcularPromedio()" mat-stroked-button color="primary">Calcular</button>
+        <h2>
+          <div class="alert alert-primary" role="alert"> 
+            {{resultado}}           
+          </div>
+        </h2>
+          
+    </div>
+  </div>
