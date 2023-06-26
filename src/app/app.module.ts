@@ -6,10 +6,14 @@ import { RouterModule } from '@angular/router';
 import { SolucionesComponent } from './soluciones/soluciones.component';
 import { PromedioComponent } from './soluciones/promedio/promedio.component';
 import { FormsModule } from '@angular/forms';
-import { MarcaListaComponent } from './soluciones/marca/marca-lista/marca-lista.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MarcaListaComponent } from './soluciones/marca/marca-lista/marca-lista.component';
+import { CategoriaListaComponent } from './soluciones/categoria/categoria-lista/categoria-lista.component';
+
+
+
 
 
 @NgModule({
@@ -18,7 +22,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SolucionesComponent,
     PromedioComponent,
-    MarcaListaComponent
+    MarcaListaComponent,
+    CategoriaListaComponent
+   
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       children: [
         {path: 'home', component: HomeComponent},
         {path: 'promedio', component:PromedioComponent},
-        {path: 'marca', component:MarcaListaComponent}
+        {path: 'marca', component:MarcaListaComponent},
+        {path: 'categoria', component:CategoriaListaComponent}
       ]
 
       
